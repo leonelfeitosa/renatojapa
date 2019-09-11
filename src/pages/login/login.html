@@ -1,0 +1,52 @@
+
+<ion-content padding>
+
+
+
+
+  
+
+<div class="fundologin login ">
+  <div class="centro">
+  <ion-list>
+
+
+   
+  <!-- <img class="logo" src="assets/imgs/logops.png">
+      -->
+
+      <p class="nomelogin">Japa Fitness</p>
+      <br> 
+    <ion-list>
+ 
+      
+<form #loginForm="ngForm" class="teste">
+  <ion-item>
+    <ion-label >CPF</ion-label>
+    <ion-input class="login" type="number" [(ngModel)]="cpf" name="cpf"></ion-input>
+  </ion-item>
+</form>
+<p>
+
+
+</p>
+
+  <ion-item>
+    <ion-label>Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="senha"></ion-input>
+  </ion-item>
+
+
+    </ion-list>
+
+    <button ion-button full class="botaologin botaologin1" (click)="logar()">Entrar  
+      <i id="entrar" class="fa fa-sign-in fa-lg" aria-hidden="true"></i></button>
+
+
+
+  </ion-list>
+
+</div>
+</div>
+
+</ion-content>

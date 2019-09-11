@@ -1,0 +1,27 @@
+<ion-content #popoverContent class="popover-page">
+  
+  <div class="wrapper">
+    <div class="profile-card js-profile-card">
+      <div class="profile-card__cnt js-profile-cnt ">
+        <div class="profile-card__name">{{nomeTreino}}</div>
+        <div class="profile-card__txt intensidade" [innerHTML]="treino.treino">Front-end Developer from <strong>Mesopotamia</strong>
+        </div>
+        <br>
+        <ion-list class="exercicio" *ngFor="let item of listaExercicios">
+          <span class="marcador">-</span>
+          <a class="tamanhoexercicio" href="{{ item.link }}"> {{ item.exercicio }}
+            <br>
+            <span class="intensidade">
+            {{ item.intensidade }}
+          </span>
+          </a> <br>
+        
+        </ion-list>
+
+       
+        
+      </div>
+    </div>
+  </div>
+
+</ion-content>

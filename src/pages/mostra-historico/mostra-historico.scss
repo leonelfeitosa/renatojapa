@@ -1,0 +1,125 @@
+page-mostra-historico {
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
+html {
+  position: relative;
+  overflow-x: hidden!important;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+ // color: #421c55;
+}
+a, a:hover {
+  text-decoration: none;
+}
+.wrapper {
+  width: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 50px 20px;
+  padding-top: 100px;
+  display: flex;
+  background-image: linear-gradient(-20deg, #f3f3f3 0%, #f3f3f3 100%);
+
+  display: flex;
+  background-image: linear-gradient(-20deg, #f3f3f3 0%, #f3f3f3 100%);
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 15px;
+    padding-block-end: 15px;
+  }
+}
+
+.profile-card {
+  width: 100%;
+  min-height: 460px;
+  margin: auto;
+  box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
+  background: #fff;
+  border-radius: 12px;
+  max-width: 900px;
+  position: relative;
+  padding-top: 55px;
+
+  &__cnt {
+    margin-top: -35px;
+    text-align: center;
+    padding: 0 20px;
+    padding-bottom: 40px;
+    transition: all .3s;
+  }
+
+  &__name {
+    font-weight: 700;
+    color: #ae0816;  // COR DO TITULO DO EXERCICIO
+    margin-bottom: 15px;
+    font-size: 18px !important;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 18px !important;
+  }
+
+  &__txt {
+    font-size: 18px;
+    font-weight: 500;
+    color: #324e63;
+    margin-bottom: 15px;
+  }
+  
+}
+
+page-mostra-historico .profile-card__name {
+  font-weight: 700;
+  text-align: left;
+  font-size: 18px !important;
+}
+p {
+  font-size: 16px !important;
+  text-align: justify;
+  color: #1a0c20;
+  margin-block-end: -5px;
+  text-align: left !important; 
+  font-weight: bold;
+}
+
+
+.exercicio{
+  margin-top: 2px;
+  text-align: left;
+  font-size: 16px !important;
+  margin-block-end: 20px;
+  //border-style: groove;
+  border-right: 0;
+  border-top: 0;
+  border-left: 0;
+ // border-bottom-width: 0.1px;
+  
+}
+
+.intensidade{
+  font-weight: bold;
+}
+
+.marcador{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+input ::before {
+  content: "" !important;
+  font-size: 20px;
+
+}
+}
+  
+
+
+

@@ -1,0 +1,30 @@
+<ion-content class="fundo">
+  <div>
+    <ion-nav #mycontent [root]="rootPage"></ion-nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <button class="botaosair" block (click)="sair()">
+            <ion-icon name="exit"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="profile-card js-profile-card">
+        <div class="profile-card__img">
+          <img (click)="presentAlert()" src="{{foto}}" alt="profile card">
+        </div>
+        <div class="profile-card__cnt js-profile-cnt">
+          <div class="profile-card__name titulo">{{ dadosAluno.nome }}</div>
+          <div class="profile-card__txt descricao" [innerHTML]="listaTreinos.treino.descricao">
+          </div>
+          <button class="profile-card__button button--blue js-message-btn " class="" ion-item
+            *ngFor="let item of listaTreinos.treinos"
+            (click)="buscaTreino(item._id, item, item.nome)">{{ item.nome }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
